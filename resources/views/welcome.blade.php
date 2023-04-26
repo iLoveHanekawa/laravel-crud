@@ -7,14 +7,8 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         @vite('resources/css/app.css')
-        <style>
-            body {
-                background-color: black;
-                color: white;
-            }
-        </style>
     </head>
-    <body>
+    <body class="text-gray-300 bg-gray-900">
         <div class="">Hello</div>
     </body>
 </html>
