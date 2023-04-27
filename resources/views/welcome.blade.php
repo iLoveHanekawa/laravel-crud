@@ -15,7 +15,7 @@
             <p class="text-xl pl-20 pt-5 font-light"><span class="font-semibold">Stack:</span> Laravel, Blade Livewire, Eloquent</p>
         </div>
         <div class="self-center flex flex-col items-center gap-10">
-            <i class="fa-solid fa-compact-disc text-10-xl cursor-pointer max-w-max animate-spin drop-shadow-[0px_0px_50px_rgba(255,255,255,0.5)]"></i>
+            <i class="fa-solid text-white fa-compact-disc text-10-xl cursor-pointer max-w-max animate-spin drop-shadow-[0px_0px_50px_rgba(255,255,255,0.5)]"></i>
             <i class="text-xl">Click on Disk to continue!</i>
         </div>
         <div class="flex flex-col pl-3 pb-3 text-gray-400 text-sm">
