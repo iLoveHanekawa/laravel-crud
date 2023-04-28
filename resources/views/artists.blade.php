@@ -11,9 +11,7 @@
         @livewireStyles
     </head>
     <body class="text-gray-300 bg-gray-900 flex flex-col h-screen justify-between">
-        <x-home.heading />
-        <livewire:home.disc />
-        <x-home.bottom />
+        <div>Hello</div>
         @livewireScripts
     </body>
 </html>
