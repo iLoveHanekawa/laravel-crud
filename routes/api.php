@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArtistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/artists', function () {
     return json_encode([['name' => 'Arjun', 'description' => 'Arjun is writing code.']]);
 });
+
+Route::post('/artists', [ArtistController::class, 'store']);

@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ArtistController extends Controller
 {
-    public function store() {
+    public function store(Request $request) {
         $artist = new Artist;
         $artist->name = 'Arjun';
         $artist->description = 'Arjun is creating apps.';
