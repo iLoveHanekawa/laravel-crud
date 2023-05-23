@@ -10,8 +10,8 @@
         @vite('resources/css/app.css')
         @livewireStyles
     </head>
-    <body class="text-gray-300 bg-gray-900 flex flex-col h-screen justify-between">
-        <div>Hello</div>
+    <body class="text-gray-300 bg-gray-900 flex flex-col h-screen justify-start">
+        <livewire:artists.create-form />
         @livewireScripts
     </body>
 </html>
