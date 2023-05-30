@@ -12,6 +12,7 @@
     </head>
     <body class="text-gray-300 bg-gray-900 flex flex-col h-screen justify-start">
         <livewire:artists.create-form />
+        <livewire:artists.artist-list />
         @livewireScripts
     </body>
 </html>

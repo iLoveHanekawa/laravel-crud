@@ -24,3 +24,4 @@ Route::get('/artists', function () {
 });
 
 Route::post('/artists', [ArtistController::class, 'store']);
+Route::get('/artists', [ArtistController::class, 'show']);
