@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use App\Models\Artist;
 
 class ArtistController extends Controller
@@ -15,11 +13,11 @@ class ArtistController extends Controller
     }
 
     public function show() {
-        $artists = Artist::all(['name', 'description']);
+        $artists = Artist::all(['name', 'description', 'id']);
         return $artists;
     }
 
-    public function destroy(int $id) {
+    public function destroy($id) {
         Artist::destroy($id);
     }
 }

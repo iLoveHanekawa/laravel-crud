@@ -1,4 +1,5 @@
-{{-- <button wire:click='$emit("deleteArtist{{$artist->id}}")'>
+<button wire:click="$emitSelf('deleteArtist')">
     <i class="fa-solid fa-trash"></i>
-</button> --}}
-<div>hi</div>
+    <div>{{ $artistId }}</div>
+</button>
+
