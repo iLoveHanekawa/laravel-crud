@@ -8,10 +8,12 @@ use Livewire\Component;
 class ArtistList extends Component
 {
     private $artists = [];
+    
     private function getArtists() {
         $artistsController = new ArtistController;
         $this->artists = $artistsController->show();
     }
+
     public function render()
     {
         $this->getArtists();

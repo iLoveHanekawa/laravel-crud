@@ -1,4 +1,4 @@
-<div class='flex flex-col gap-2'>
+<div class='flex flex-col gap-2 pb-5 border-b-2 border-gray-700'>
     <h3 class="text-4xl border-b-2 pt-3 pl-3 border-b-gray-700 pb-3">Add New Artist</h3>
     <form wire:submit.prevent="createArtist" class = 'flex items-end gap-2 ml-3 mt-2'>
         <div class="flex flex-col">

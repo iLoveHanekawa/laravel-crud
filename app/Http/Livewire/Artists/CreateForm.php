@@ -13,9 +13,8 @@ class CreateForm extends Component
 
     public function createArtist() {
         $artistController = new ArtistController;
-        $artistController->store();
+        $artistController->store($this->name, $this->description);
     }
-
     public function render()
     {
         return view('livewire.artists.create-form');
