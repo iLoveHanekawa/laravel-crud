@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       fontSize: {
         "10-xl": "16rem"
+      },
+      transitionProperty: {
+        'width': 'width'
       }
     },
   },

@@ -25,3 +25,5 @@ Route::get('/artists', function () {
 
 Route::post('/artists', [ArtistController::class, 'store']);
 Route::get('/artists', [ArtistController::class, 'show']);
+Route::patch('/artists', [ArtistController::class, 'edit']);
+Route::delete('/artists', [ArtistController::class, 'destroy']);

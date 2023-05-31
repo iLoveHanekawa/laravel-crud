@@ -20,4 +20,8 @@ class ArtistController extends Controller
     public function destroy($id) {
         Artist::destroy($id);
     }
+
+    public function edit($id, $description) {
+        Artist::query()->where(['id' => $id])->update(['description' => $description]);
+    }
 }
