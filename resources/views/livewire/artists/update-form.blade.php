@@ -1,4 +1,4 @@
-<form wire:submit.prevent="">
+<form wire:submit.prevent="$emitSelf('updateArtist')">
     <button for='del' wire:click="$emitSelf('toggleFocus')">
         <i class="fa-solid fa-pen"></i>
     </button>

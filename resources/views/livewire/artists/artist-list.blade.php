@@ -14,7 +14,7 @@
                     {{ $artist->description }}
                     <div class="flex gap-2">
                         <livewire:artists.delete-form :artistId="$artist->id" :key="$artist->id" />
-                        <livewire:artists.update-form />
+                        <livewire:artists.update-form :artistId="$artist->id" :key="$artist->id" />
                     </div>
                 </div>
             </td>

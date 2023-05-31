@@ -19,10 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/artists', function () {
-    return json_encode([['name' => 'Arjun', 'description' => 'Arjun is writing code.']]);
-});
-
 Route::post('/artists', [ArtistController::class, 'store']);
 Route::get('/artists', [ArtistController::class, 'show']);
 Route::patch('/artists', [ArtistController::class, 'edit']);
