@@ -9,7 +9,10 @@
         @endphp
         <tr class="border-white border-2">
             <td class="border-white border-2 pt-1 py-1 pl-2 text-gray-300">{{ $artist->name }}</td>
-            <td class="border-white border-2 pl-2 text-gray-300">{{ $artist->description }}</td>
+            <td class="border-white border-2 pl-2 text-gray-300">
+                {{ $artist->description }}
+                <livewire:artists.delete-form />
+            </td>
         </tr>
     @endforeach
 </table>

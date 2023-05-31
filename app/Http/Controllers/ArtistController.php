@@ -12,11 +12,14 @@ class ArtistController extends Controller
         $artist->name = $name;
         $artist->description = $description;
         $artist->save();
-        return $artist;
     }
 
     public function show() {
         $artists = Artist::all(['name', 'description']);
         return $artists;
+    }
+
+    public function destroy(int $id) {
+        Artist::destroy($id);
     }
 }

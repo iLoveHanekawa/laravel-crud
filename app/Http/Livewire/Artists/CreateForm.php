@@ -10,7 +10,6 @@ class CreateForm extends Component
     protected $listeners = ['createArtist'];
     public $name;
     public $description;
-
     public function createArtist() {
         $artistController = new ArtistController;
         $artistController->store($this->name, $this->description);

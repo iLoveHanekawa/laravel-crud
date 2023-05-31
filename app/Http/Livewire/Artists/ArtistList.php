@@ -7,11 +7,16 @@ use Livewire\Component;
 
 class ArtistList extends Component
 {
-    private $artists = [];
-    
+    public $artists = [];
+    protected $listeners = ['deleteArtist'];
+    private $artistId;
     private function getArtists() {
         $artistsController = new ArtistController;
         $this->artists = $artistsController->show();
+    }
+    public function deleteArtist() {
+        $artistController = new ArtistController;
+        $artistController->destroy($this->artistId);
     }
 
     public function render()
@@ -19,5 +24,4 @@ class ArtistList extends Component
         $this->getArtists();
         return view('livewire.artists.artist-list', ['artists' => $this->artists]);
     }
-    
 }
